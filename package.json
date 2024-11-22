@@ -16,6 +16,14 @@
   ],
   "author": "Naveen",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naveen-joshi/npm_restrict.git"
+  },
+  "bugs": {
+    "url": "https://github.com/naveen-joshi/npm_restrict/issues"
+  },
+  "homepage": "https://github.com/naveen-joshi/npm_restrict#readme",
   "engines": {
     "node": ">=12.0.0"
   },
