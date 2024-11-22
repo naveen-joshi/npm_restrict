@@ -1,10 +1,10 @@
-const {
+import {
   isEmailBlocked,
   addBlockedEmail,
   addBlockedEmails,
   clearBlockedEmails,
   getBlockedEmails,
-} = require("../emailChecker");
+} from "../emailChecker";
 
 describe("Email Checker", () => {
   beforeEach(() => {

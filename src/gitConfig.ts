@@ -1,6 +1,6 @@
-const { execSync } = require("child_process");
+import { execSync } from "child_process";
 
-function getGitEmail() {
+export function getGitEmail(): string | null {
   try {
     return execSync("git config user.email").toString().trim();
   } catch (error) {
@@ -8,5 +8,3 @@ function getGitEmail() {
     return null;
   }
 }
-
-module.exports = { getGitEmail };

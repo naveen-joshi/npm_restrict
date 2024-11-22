@@ -1,7 +1,7 @@
-const { getGitEmail } = require("./src/gitConfig");
-const { isEmailBlocked } = require("./src/emailChecker");
+import { getGitEmail } from "./gitConfig";
+import { isEmailBlocked } from "./emailChecker";
 
-function checkEmail() {
+function checkEmail(): void {
   const email = getGitEmail();
 
   if (!email) {
