@@ -1,6 +1,6 @@
 {
   "name": "npm-restrict",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Package that checks git user email/domain during installation",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -25,7 +25,11 @@
     "postinstall": "node dist/cjs/postinstall.js",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "release": "npm run test && npm run prepare",
+    "release:patch": "npm run release patch && npm publish",
+    "release:minor": "npm run release minor && npm publish",
+    "release:major": "npm run release major && npm publish"
   },
   "keywords": [
     "git",
