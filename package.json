@@ -1,0 +1,25 @@
+{
+  "name": "npm-restrict",
+  "version": "1.0.0",
+  "description": "Package that checks git user email/domain during installation",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node postinstall.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "git",
+    "email",
+    "checker",
+    "npm-restrict"
+  ],
+  "author": "Naveen",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
